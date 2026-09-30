@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sevenday — web design & development, shipped in a week</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav><b><a href="index.html">Sevenday</a></b><div class="mono">
+<a href="index.html" data-page="index.html">Home</a>
+<a href="work.html" data-page="work.html">Work</a>
+<a href="pricing.html" data-page="pricing.html">Pricing</a>
+<a href="contact.html" data-page="contact.html">Contact</a>
+</div></nav>
+
+<div class="wrap">
+<header class="hero">
+<h1>Your website, designed and built in <em>seven days.</em></h1>
+<div>
+<p>One designer-developer, one fixed scope, one week. You get a live site, not a deck about one.</p>
+<a class="btn" href="contact.html">Book a start date →</a>
+</div>
+</header>
+<div class="ticker mono"><span>Design</span><span>React / Next.js</span><span>CMS setup</span><span>SEO basics</span><span>Launch + handover</span></div>
+
+<section class="pad">
+<span class="mono">Recent concepts</span>
+<h2>A look at the work</h2>
+<div class="teaser" id="teaser"></div>
+<p><a class="btn" href="work.html">See the full wheel →</a></p>
+</section>
+
+<section class="pad" style="padding-top:0">
+<span class="mono">The method</span>
+<h2>Seven days, no surprises.</h2>
+<div class="days">
+<div class="day"><span class="mono">Mon</span><h3>Brief & sitemap</h3><p>A 60-minute call, then a locked scope, page list and content checklist by evening.</p></div>
+<div class="day"><span class="mono">Tue</span><h3>Look & feel</h3><p>Type, colour and one key screen. You react once; we pick a direction.</p></div>
+<div class="day"><span class="mono">Wed</span><h3>Design, all pages</h3><p>Every page designed on desktop and mobile, using your real copy where possible.</p></div>
+<div class="day"><span class="mono">Thu</span><h3>Build</h3><p>Components, layouts, responsive behaviour and the CMS wired up.</p></div>
+<div class="day"><span class="mono">Fri</span><h3>Build & content</h3><p>Forms, analytics, performance, accessibility pass, your content dropped in.</p></div>
+<div class="day"><span class="mono">Sat</span><h3>Review</h3><p>A private staging link. One consolidated round of feedback.</p></div>
+<div class="day"><span class="mono">Sun</span><h3>Launch</h3><p>Domain, hosting, redirects, go live, and a short video on running it yourself.</p></div>
+</div>
+<p style="margin-top:2rem"><a class="btn" href="pricing.html">See pricing →</a></p>
+</section>
+</div>
+
+<footer class="wrap">
+<span class="mono">Next open week: Monday</span>
+<h2>Have a site that should already exist?</h2>
+<p style="margin:1.5rem 0"><a class="btn" href="contact.html">Start a project →</a></p>
+<span class="mono" style="color:var(--mut)">© 2026 Sevenday</span>
+</footer>
+
+<script src="common.js"></script>
+<script>
+(function () {
+  var D = window.SEVENDAY, box = document.getElementById("teaser");
+  D.WORKS.slice(0, 4).forEach(function (t, i) {
+    var a = document.createElement("a");
+    a.href = "work.html";
+    a.innerHTML = '<img alt="' + t + '" src="' + D.art(i) + '">';
+    box.appendChild(a);
+  });
+})();
+</script>
+</body>
+</html>

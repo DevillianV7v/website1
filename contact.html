@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Sevenday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>#f input,#f select,#f textarea{font:inherit;color:var(--fg);background:transparent;border:1px solid var(--fg);padding:.75rem;border-radius:0;width:100%}#f :focus-visible{outline:2px solid var(--acc)}summary{cursor:pointer}details.day{display:block}details p{margin-top:.6rem}</style>
+</head>
+<body>
+<nav><b><a href="index.html">Sevenday</a></b><div class="mono">
+<a href="index.html" data-page="index.html">Home</a>
+<a href="work.html" data-page="work.html">Work</a>
+<a href="pricing.html" data-page="pricing.html">Pricing</a>
+<a href="contact.html" data-page="contact.html">Contact</a>
+</div></nav>
+
+<div class="wrap">
+<header class="pagehero">
+<span class="mono">Next open week: Monday</span>
+<h1 id="cth">Have a site that should already exist?</h1>
+</header>
+
+<form id="f" style="display:grid;gap:.8rem;max-width:34rem;margin:0 0 3rem">
+<input required id="nm" placeholder="Your name" autocomplete="name">
+<input required id="em" type="email" placeholder="Your email" autocomplete="email">
+<select id="pk"><option>Landing (one page)</option><option>Studio (up to 5 pages)</option><option>Product (app or shop)</option><option>Not sure yet</option></select>
+<textarea required id="brief" rows="4" placeholder="What are we building, and by when?"></textarea>
+<button class="btn" style="border:0;cursor:pointer;justify-self:start">Send brief →</button>
+</form>
+
+<section class="pad" style="padding-top:0">
+<span class="mono">Questions</span>
+<h2>Before you book.</h2>
+<div class="days">
+<details class="day"><summary><h3 style="display:inline">What do I need to provide?</h3></summary><p>Your copy, logo and any photos by Monday evening. No copy yet? I'll write a first draft from the call.</p></details>
+<details class="day"><summary><h3 style="display:inline">What if I want changes?</h3></summary><p>One consolidated round on Saturday is included. Extra rounds are billed hourly.</p></details>
+<details class="day"><summary><h3 style="display:inline">Who owns the site?</h3></summary><p>You do: code, design files, domain and hosting accounts are all in your name at handover.</p></details>
+<details class="day"><summary><h3 style="display:inline">How do I pay?</h3></summary><p>50% to reserve the week, 50% at launch.</p></details>
+</div>
+</section>
+</div>
+
+<footer class="wrap">
+<span class="mono" style="color:var(--mut)">© 2026 Sevenday</span>
+</footer>
+
+<script src="common.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
